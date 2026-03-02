@@ -1,14 +1,15 @@
-import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
+/* eslint-disable no-undef */
 import path from 'path'
-
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-      'src': path.resolve(__dirname, './src'),
-    },
-  },
+	plugins: [react()],
+	base: '/sport-app-lesson/',
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, './src'),
+			src: path.resolve(__dirname, './src')
+		}
+	}
 })
