@@ -2,7 +2,7 @@ name: Workout-app Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 permissions:
   contents: read
