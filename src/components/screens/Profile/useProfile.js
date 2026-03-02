@@ -9,4 +9,3 @@ export const useProfile = () => {
 		select: ({ data }) => data
 	})
 }
-// ghkkkk
